@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
     background: rgba(253,196,177,255);
     color: white;
     background: linear-gradient(90deg, rgba(118,109,92,255)50%, rgb(104, 2, 104) 50%);
-
+    font-family: 'Poppins';
 
     
 }.about{
@@ -28,57 +29,7 @@ header{
    display: grid;
    justify-content: center;
 }
-.ribbon {
-    font-family: 'Merriweather', serif;
-    font-size: 16px !important;
-    width: 50%;
-    position: relative;
-    background: rgb(166, 166, 63);
-    color: black;
-    text-align: center;
-    padding: 1em 2em; /* Adjust to suit */
-    margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-   }
-   .ribbon:before, .ribbon:after {
-    content: "";
-    position: absolute;
 
-    z-index: -1;
-    display: block;
-    bottom: -1em;
-    border: 1.5em solid rgba(255,203,137,255);
-    
-   }
-   .ribbon:before {
-    left: -2em;
-    border-right-width: 1.5em;
-    border-left-color: transparent;
-    
-
-   }
-   .ribbon:after {
-    right: -2em;
-    
-
-    border-left-width: 1.5em;
-    border-right-color: transparent;
-   }
-   .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
-    content: "";
-    position: absolute;
-    display: block;
-    border-style: solid;
-    border-color: rgb(166, 166, 63) transparent transparent transparent;
-    bottom: -1em;
-   }
-   .ribbon .ribbon-content:before {
-    left: 0;
-    border-width: 1em 0 0 1em;
-   }
-   .ribbon .ribbon-content:after {
-    right: 0;
-    border-width: 1em 1em 0 0;
-}
 
 .name{
     text-align: center;
@@ -143,20 +94,16 @@ header{
     .text{
         color: black;
         display: grid;
-        grid-template-columns: 0.2fr 1fr;
+        grid-template-columns: 0.1fr 1fr;
         align-items: center;
         gap: 4%;
         h1{
             // margin: auto;
         position: relative;
-        width: 230px;
+        width: 260px;
         height: 50px;
-        // border: 2px black solid;
         border-right: 2px grey solid;
-        margin-top: 15%;
-        }
-        p{
-            margin-top: 2%;
+        // margin-top: 15%;
         }
     }
 }
