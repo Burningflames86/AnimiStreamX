@@ -7,10 +7,7 @@ function pick(){
 
     const gen = this.className.split(' ')[2];
     list.forEach(element => {
-        element.style.borderColor = 'white';
-        element.style.border = '0px white solid'
-
-
+          element.style.borderColor = 'white';
     });
     this.style.borderBottom = '2px darkmagenta solid'
     this.style.borderColor = 'darkmagenta';
