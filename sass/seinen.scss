@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}body{
+    background-color: black;
+    color:white;
+    font-family: 'Sono';
+}li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+}
+header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: fixed;
+    top: 0;
+    align-items:flex-end;
+    justify-content: center;
+    height: 150px;
+    width: 100vw;
+    background: url('images/p4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20px;
+    background-position-x: 120px;
+    h1{
+        justify-self: center;
+    }
+    .search{
+        border: 2px darkmagenta solid;
+        border-radius: 40px;
+        margin-bottom: -2%;
+        width: 900px;
+        height: 50px;
+        background-color: lightpink;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input{
+            border: none;
+            position: absolute;
+            // border-radius: 35px;
+            // background-color: black;
+            background-color: lightpink;
+            color: darkmagenta;
+            left: 3%;
+            // color: white;
+            &:focus {
+                outline : none;
+            }
+        }
+        
+        .fa-solid{
+            position: absolute;
+            right: 3%;
+            color:darkmagenta;
+        }
+    }
+}
+.about{
+    // display: grid;
+    // grid-template-columns: 1fr 2fr 1fr;
+
+
+    .categories, .genres{
+        position: fixed;
+        margin-top: -4.5%;
+    }
+    .categories{
+        left: 0;
+        ul{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            .l1{
+                background: url('images/p1..jpg');
+                background-size: cover;
+            }
+            .l2{
+                background: url('images/p5.jpg');
+                background-size: cover;
+            }
+            .l3{
+                background: url('images/p3.jpg');
+                background-size: cover;
+            }
+            .l4{
+                background: url('images/p4.jpg');
+                background-size: cover;
+                border-color: rebeccapurple;
+            }
+            .l5{
+                background: url('images/p2.jpg');
+                background-size: contain;
+            }
+        }
+        li{
+            border-bottom: 2px white solid;
+            padding: 30px 30px;
+            
+            &:hover{
+                border-color: purple;
+            }
+        }
+    }.genres{
+        right: 0;
+        li{
+            border-bottom: 2px white solid;
+            padding: 28px 30px;
+
+            &:hover{
+                border-color: purple;
+            }
+        }
+
+        ul{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            .g1{
+                background: url('images/action.jpg');
+                background-size: cover;
+            }
+            .g2{
+                background: url('images/comedy.jpg');
+                background-size: cover;
+            }
+            .g3{
+                background: url('images/slice.jpg');
+                background-size: cover;
+            }
+            .g4{
+                background: url('images/romance.jpg');
+                background-size: cover;
+            }
+            .g5{
+                background: url('images/sports.jpg');
+                background-size: cover;
+            }
+        }
+    }.aboutsite{
+        margin: 0 auto;
+        width: 50%;
+        border: 2px white solid;
+        height: 55vh;
+    }
+    h1{
+        text-align: center;
+    }
+}
+.animes{
+    margin-top: 18%;
+    display: grid;
+    grid-template-columns: repeat(3, 18%);
+    grid-auto-rows: 300px;
+    justify-content: center;
+    gap: 4%;
+    text-align: center;
+}
+    
+.vistoro{
+    width: 100%;
+    height: 100%;
+    background: url('https://pics.filmaffinity.com/Araiguma_Rascal_Rascal_the_Raccoon_TV_Series-616112718-mmed.jpg');
+    background-size: 100%;
+    border-radius: 8px;
+    transition: all 0.3s ease-out 0s;
+    transform-origin: center;
+
+    &:hover{
+    transform: scale(1.1);
+    }
+
+}
+.visokki{
+    width: 100%;
+    height: 100%;
+    background: url('https://occ-0-55-33.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABc0T_zrLMQkp9htLfJo3Y0B6P6LwPvugjY96G_Gyevtr8XN8og7RS682loXOuP95COgCUI1a8Fe5D2L9vGfwD2R9KkIJtAX8jyDo.jpg?r=677');
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: all 0.3s ease-out 0s;
+    transform-origin: center;
+
+    &:hover{
+    transform: scale(1.1);
+    }
+
+}
+.visdor{
+    width: 100%;
+    height: 100%;
+    background: url('https://upload.wikimedia.org/wikipedia/en/9/9a/Made_in_Abyss_volume_1_cover.jpg');
+    background-size: 100%;
+    border-radius: 8px;
+    transition: all 0.3s ease-out 0s;
+    transform-origin: center;
+
+    &:hover{
+    transform: scale(1.1);
+    }
+
+}

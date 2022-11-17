@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Doji Dansei</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+     body{
+      font-family: 'Sono';
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+
+     }   
+     .container{
+        height: 500px;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+     }iframe{
+        margin: 0 auto;
+        width: 90%;
+        height: 130%;
+     }
+.about{
+    display: flex;
+    justify-content: center;
+}  
+.about .categories, .about .genres {
+  position: fixed;
+  margin-top: 4%;
+}
+.about .categories {
+  left: 0;
+}
+.about .categories ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.about .categories ul .l1 {
+  background: url("images/p1..jpg");
+  background-size: cover;
+  border-color: rebeccapurple;
+}
+.about .categories ul .l2 {
+  background: url("images/p5.jpg");
+  background-size: cover;
+}
+.about .categories ul .l3 {
+  background: url("images/p3.jpg");
+  background-size: cover;
+}
+.about .categories ul .l4 {
+  background: url("images/p4.jpg");
+  background-size: cover;
+}
+.about .categories ul .l5 {
+  background: url("images/p2.jpg");
+  background-size: contain;
+}
+.about .categories li {
+  border-bottom: 2px white solid;
+  padding: 30px 30px;
+}
+.about .genres {
+  right: 0;
+}
+.about .genres li {
+  border-bottom: 2px white solid;
+  padding: 28px 30px;
+}
+.about .genres ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  list-style: none;
+}
+.about .genres ul .g1 {
+  background: url("images/action.jpg");
+  background-size: cover;
+}
+.about .genres ul .g2 {
+  background: url("images/comedy.jpg");
+  background-size: cover;
+}
+.about .genres ul .g3 {
+  background: url("images/slice.jpg");
+  background-size: cover;
+}
+.about .genres ul .g4 {
+  background: url("images/romance.jpg");
+  background-size: cover;
+}
+.about .genres ul .g5 {
+  background: url("images/sports.jpg");
+  background-size: cover;
+}
+.about .aboutsite {
+  margin: 0 auto;
+  width: 50%;
+  border: 2px white solid;
+  height: 55vh;
+}
+.about h1 {
+  text-align: center;
+}a{
+text-decoration: none;
+  color: white;
+
+}h2{
+    color: white;
+    margin: auto;
+    width: 30%;
+    margin-bottom: 2%;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="about">
+            <div class="categories">
+                <ul>
+                    <a href="kodomomuke.html"> <li class="l1">kodomomuke</li></a>
+                    <a href="shojou.html"> <li class="l2">Shojou</li></a>
+                    <a href="shonen.html"> <li class="l3">Shonen</li></a>
+                    <a href="seinen.html"> <li class="l4">Seinen</li></a>
+                    <a href="josei.html"> <li class="l5">Josei</li></a>
+                </ul>
+            </div>
+            <div class="genres">
+                <ul>
+                <a href="http://"><li class="list g1 action">Action</li></a>
+                <a href="http://"><li class="list g2 comedy">Comedy</li></a>
+                <a href="http://"><li class="list g3 sliceoflife">Slice Of Life</li></a>
+                <a href="http://"><li class="list g4 romance">Romance</li></a>
+                <a href="http://"><li class="list g5 sports">Sports</li></a>
+                </ul>
+            </div>
+            
+        </div>
+    <h2>Now Playing: Cool Doji Dansei</h2>
+    <iframe src="//gogohd.net/streaming.php?id=MTk0OTky&title=Cool+Doji+Danshi+Episode+6" height="1920" width="1080"  frameborder="0" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

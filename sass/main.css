@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: "Sono";
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.warn, .adbloc {
+  position: absolute;
+  background-color: purple;
+  padding: 0 30px;
+  line-height: 50px;
+  border-radius: 4px;
+  color: lightpink;
+  left: 35%;
+  bottom: 20px;
+  height: 50px;
+  transform: scale(0);
+}
+
+.adbloc {
+  font-family: "Roboto";
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.632);
+  width: 100vw;
+  top: 0%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  color: white;
+  transform: scale(1);
+}
+.adbloc .text {
+  background-color: purple;
+  color: white;
+  width: 70%;
+  border-radius: 8px;
+  padding-left: 3%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  -webkit-animation: fadeInDown 0.5s ease 0s 1;
+          animation: fadeInDown 0.5s ease 0s 1;
+}
+.adbloc .text p {
+  line-height: 20px;
+}
+.adbloc .text p .sp {
+  margin-top: 40%;
+}
+.adbloc .text a {
+  font-size: 20px;
+  text-decoration: underline;
+}
+.adbloc button {
+  margin-top: 4%;
+  width: 96%;
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  background: pink;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.add {
+  transform: scale(1);
+  -webkit-animation: shake 0.5s ease 0s 1;
+          animation: shake 0.5s ease 0s 1;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  align-items: flex-end;
+  justify-content: center;
+  height: 200px;
+  width: 100vw;
+  background: url("https://i.pinimg.com/564x/76/ac/1e/76ac1ec03cdde3a526d718cdf21ea3f7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -100px;
+}
+header .search {
+  border: 2px darkmagenta solid;
+  border-radius: 40px;
+  margin-bottom: -2%;
+  width: 900px;
+  height: 50px;
+  background-color: lightpink;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .search input {
+  border: none;
+  position: absolute;
+  background-color: lightpink;
+  color: darkmagenta;
+  left: 3%;
+}
+header .search input:focus {
+  outline: none;
+}
+header .search .fa-solid {
+  position: absolute;
+  right: 3%;
+  color: darkmagenta;
+}
+
+.up {
+  transition: all 0.6s ease-in-out 0s;
+}
+
+.animes {
+  display: grid;
+  grid-template-columns: repeat(3, 28%);
+  grid-auto-rows: 300px;
+  justify-content: center;
+  gap: 4%;
+  text-align: center;
+  margin-top: -5%;
+  width: 130%;
+  padding-bottom: 10%;
+}
+
+.vistoro {
+  width: 100%;
+  height: 100%;
+  background: url("https://cdn.myanimelist.net/s/common/uploaded_files/1632590344-8c25d52e9c867090be87a557e9dd66fc.jpeg");
+  background-size: 100%;
+  border-radius: 8px;
+  transition: all 0.3s ease-out 0s;
+  transform-origin: center;
+}
+.vistoro:hover {
+  transform: scale(1.1);
+}
+
+.visokki {
+  width: 100%;
+  height: 100%;
+  background: url("https://i0.wp.com/asianatimes.com/wp-content/uploads/2022/07/Jujustu-Kaisen-0.jpg");
+  background-size: 100% 103%;
+  border-radius: 8px;
+  transition: all 0.3s ease-out 0s;
+  transform-origin: center;
+}
+.visokki:hover {
+  transform: scale(1.1);
+}
+
+.visdor {
+  width: 100%;
+  height: 100%;
+  background: url("https://upload.wikimedia.org/wikipedia/en/9/9a/Made_in_Abyss_volume_1_cover.jpg");
+  background-size: 100%;
+  border-radius: 8px;
+  transition: all 0.3s ease-out 0s;
+  transform-origin: center;
+}
+.visdor:hover {
+  transform: scale(1.1);
+}
+
+main {
+  margin-top: 20%;
+}
+main .about .categories, main .about .genres {
+  position: fixed;
+  margin-top: -4.5%;
+}
+main .about .categories {
+  left: 0;
+}
+main .about .categories ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+main .about .categories ul .l1 {
+  background: url("images/p1..jpg");
+  background-size: cover;
+}
+main .about .categories ul .l2 {
+  background: url("images/p5.jpg");
+  background-size: cover;
+}
+main .about .categories ul .l3 {
+  background: url("images/p3.jpg");
+  background-size: cover;
+}
+main .about .categories ul .l4 {
+  background: url("images/p4.jpg");
+  background-size: cover;
+}
+main .about .categories ul .l5 {
+  background: url("images/p2.jpg");
+  background-size: contain;
+}
+main .about .categories ul li {
+  border-bottom: 2px white solid;
+  padding: 28px 30px;
+}
+main .about .categories ul li:hover {
+  border-color: purple;
+}
+main .about .genres {
+  right: 0;
+}
+main .about .genres li {
+  border-bottom: 2px grey solid;
+  padding: 28px 30px;
+}
+main .about .genres ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+main .about .genres ul .g1 {
+  background: url("images/action.jpg");
+  background-size: cover;
+  background-color: grey;
+  background-blend-mode: multiply;
+  color: grey;
+}
+main .about .genres ul .g2 {
+  background: url("images/comedy.jpg");
+  background-size: cover;
+  background-color: grey;
+  background-blend-mode: multiply;
+  color: grey;
+}
+main .about .genres ul .g3 {
+  background: url("images/slice.jpg");
+  background-size: cover;
+  background-color: grey;
+  background-blend-mode: multiply;
+  color: grey;
+}
+main .about .genres ul .g4 {
+  background: url("images/romance.jpg");
+  background-size: cover;
+  background-color: grey;
+  background-blend-mode: multiply;
+  color: grey;
+}
+main .about .genres ul .g5 {
+  background: url("images/sports.jpg");
+  background-size: cover;
+  background-color: grey;
+  background-blend-mode: multiply;
+  color: grey;
+}
+main .about .aboutsite {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20%;
+  height: 55vh;
+}
+main .about h1 {
+  text-align: center;
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */
